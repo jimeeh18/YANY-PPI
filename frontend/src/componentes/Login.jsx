@@ -1,133 +1,95 @@
 import React from "react";
-import Portada from "../images/Portada.png";
-import Cookies from "universal-cookie";
-import axios from "axios";
-import sha1 from "sha1";
+import imagen from "../images/yany_logo.jpg"
 
-// import { Link } from 'react-router-dom';
 
-const cookies = new Cookies();
-const baseUrl = "http://localhost:4001/api/usuarios";
+function Iniciosesion() {
+  return (
+    <div className="Iniciosesion">
+      <img src={imagen} alt="carro" style={{maxWidth:"100vw", padding: "20px"}}>
+      </img>
+      <section class="vh-100" style={{ backgroundColor: "#d080ff", borderRadius: "35px" }}>
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div
+                class="card shadow-2-strong"
+                style={{ borderRadius: "1rem" }}
+              >
+                <div class="card-body p-5 text-center">
+                  <h3 class="mb-5">Inicia sesión</h3>
 
-class Iniciosesion extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      form: {
-        Correo: "",
-        Contraseña: "",
-      },
-    };
-  }
-
-  handleChange = async (e) => {
-    await this.setState({
-      form: {
-        ...this.state.form,
-        [e.target.name]: e.target.value,
-      },
-    });
-  };
-
-  iniciarSesion = async () => {
-    await axios.get(baseUrl).then((response) => {
-        alert(response.data);
-        
-      })
-      .then(response => {
-        if (response.length > 0) {
-          var respuesta = response[0];
-          cookies.set('Id', respuesta.Id, {path: "/"});
-          cookies.set('Apellido', respuesta.Apellido, {path: "/"});
-          cookies.set('Nombre_U', respuesta.Nombre_U, {path: "/"});
-          cookies.set('Correo', respuesta.Correo, {path: "/"});
-          alert(`Bienvenido ${respuesta.Nombre_U} ${respuesta.Apellido}`);
-          window.location.href = "/homeL";
-        } else {
-          alert("El usuario o la contraseña no son correctos");
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
-  componentDidMount() {
-    if (cookies.get("Correo")) {
-      window.location.href = "../pages/HomeL";
-    }
-  }
-  render() {
-    return (
-      <div className="Iniciosesion">
-        <div className="container">
-          <div className="row">
-            <img
-              src={Portada}
-              style={{ maxWidth: "500px" }}
-              className="rounded mx-auto d-block"
-              alt="portada"
-            />
-            <div className="container">
-              <div className="mx-auto " style={{ maxWidth: "400px" }}>
-                <form className="need-validation">
-                  <div className="card">
-                    <div className="card-header">Iniciar sesión</div>
-                    <div className="card-body">
-                      <div className="mb-3">
-                        <label className="form-label">
-                          Usuario o correo electrónico
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          name="Correo"
-                          id="user"
-                          aria-describedby="helpId"
-                          placeholder=""
-                          onChange={this.handleChange}
-                          required
-                        />
-                        <small id="helpId" className="form-text text-muted">
-                          Escriba su nombre de usuario o correo electronico.
-                        </small>
-                      </div>
-
-                      <div className="mb-3">
-                        <label className="form-label">Contraseña</label>
-                        <input
-                          type="password"
-                          className="form-control"
-                          name="Contraseña"
-                          id=""
-                          aria-describedby="helpId"
-                          placeholder=""
-                          onChange={this.handleChange}
-                          required
-                        />
-                        <small id="helpId" className="form-text text-muted">
-                          Escriba su contraseña.
-                        </small>
-                      </div>
-
-                      <button
-                        type="submit"
-                        className="btn btn-primary"
-                        onClick={() => this.iniciarSesion()}
-                      >
-                        Iniciar sesión
-                      </button>
-                    </div>
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input
+                      type="email"
+                      id="typeEmailX-2"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="typeEmailX-2">
+                      Correo
+                    </label>
                   </div>
-                </form>
-                <br />
+
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="typePasswordX-2"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="typePasswordX-2">
+                      Contraseña
+                    </label>
+                  </div>
+
+                  <div class="form-check d-flex justify-content-start mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="form1Example3"
+                    />
+                    <label class="form-check-label" for="form1Example3">
+                      {" "}
+                       He olvidado la contraseña{" "}
+                    </label>
+                  </div>
+
+                  <button
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    class="btn btn-primary btn-lg btn-block"
+                    type="submit"
+                  >
+                    Inicio
+                  </button>
+
+                  <hr class="my-4" />
+
+                  <button
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    class="btn btn-lg btn-block btn-primary"
+                    style={{ backgroundColor: "#d080ff" }}
+                    type="submit"
+                  >
+                    <i class="fab fa-google me-2"></i> Inicia con Google
+                  </button>
+                  <button
+                    data-mdb-button-init
+                    data-mdb-ripple-init
+                    class="btn btn-lg btn-block btn-primary mb-2"
+                    style={{ backgroundColor: "#d080ff" }}
+                    type="submit"
+                  >
+                    <i class="fab fa-facebook-f me-2"></i>Inicia con Facebook
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    );
-  }
+      </section>
+    </div>
+  );
 }
 
 export default Iniciosesion;

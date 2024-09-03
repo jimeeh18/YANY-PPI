@@ -10,7 +10,6 @@ function App() {
     <Router>
         <Routes>
           <Route exact path='/' element={<Login/>}/>
-          <Route exact path='/' element={<Profile/>}/>
         </Routes>
       
     </Router>

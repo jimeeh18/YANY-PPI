@@ -7,6 +7,6 @@ function Login() {
         <div className="Login">
             <Iniciosesion />
         </div>
-    );
+    );  
 }
 export default Login;

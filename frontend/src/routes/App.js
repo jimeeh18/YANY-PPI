@@ -7,6 +7,7 @@ import Registro from '../pages/registroC';
 
 
 
+
 function App() {
   return (
     <Router>

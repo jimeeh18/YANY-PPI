@@ -4,9 +4,8 @@ import ProfileU from "../componentes/profileU";
 
 function Profile() {
     return (
-        <div className="Profile">
+        <div className="ProfileU">
             <ProfileU/>
-            
         </div>
     );
 }

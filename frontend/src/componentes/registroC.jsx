@@ -1,5 +1,7 @@
 import React from "react";
 import registro from "../images/registro_imagen.jpeg";
+import { Link } from "react-router-dom";
+
 
 function RegistroC() {
   return (
@@ -111,6 +113,7 @@ function RegistroC() {
                           </button>
                         </div>
                         <div className="col">
+                          <Link to="/iniciou">
                           <button
                             type="button"
                             class="btn btn-secondary btn-sm"
@@ -118,6 +121,8 @@ function RegistroC() {
                           >
                             Usuaria
                           </button>
+                          </Link>
+                          
                         </div>
                       </div>
                     </form>

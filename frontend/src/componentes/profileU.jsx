@@ -43,6 +43,7 @@ function ProfileU() {
         </div>
       </section>
     </div>
-  );
+  
+);
 }
 export default ProfileU;

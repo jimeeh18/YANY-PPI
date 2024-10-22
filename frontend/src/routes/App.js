@@ -4,6 +4,7 @@ import Login from '../pages/Login';
 import Profile from '../pages/Profile';
 import ProfileU from '../pages/profileU';
 import InicioC from '../pages/inicioC';
+import SolicitudU from '../pages/solucitudes'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route exact path='/perfil' element={<Profile/>}/>
           <Route exact path='/perfilU' element={<ProfileU/>}/>
           <Route exact path='/inicioC' element={<InicioC/>}/>
+          <Route exact path='/SolicitudU' element={<SolicitudU/>}/>
         
         </Routes>
       

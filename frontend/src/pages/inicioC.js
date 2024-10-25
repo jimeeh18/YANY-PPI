@@ -1,12 +1,14 @@
 import React from "react";
-import IniciOC from "../componentes/inicioC";
+import Inicioc from "../componentes/inicioC";
+
 
 
 function InicioC() {
     return (
-        <div className="inicio">
-             <IniciOC/>
+        <div className="inicioc">
+            <InicioC/>
         </div>
-    );
+    ); 
 }
-export default InicioC;
+export default Inicioc;
+

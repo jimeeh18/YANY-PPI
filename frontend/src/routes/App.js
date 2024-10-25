@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Login from '../pages/Login';
+
 import Inicioc from '../pages/inicioC';
 import Registro from '../pages/registroC'
 import Iniciou from '../componentes/inicioU';
@@ -10,8 +11,10 @@ import Idioma from '../pages/idioma';
 import Ciudad from '../pages/ciudad';
 import Intro from '../pages/intro';
 import Formulario from '../pages/formulario';
-
-
+import Profile from '../pages/Profile';
+import ProfileU from '../pages/profileU';
+import InicioC from '../pages/inicioC';
+import SolicitudU from '../pages/solucitudes'
 
 
 
@@ -29,12 +32,10 @@ function App() {
           <Route exact path='/ciudad' element={<Ciudad/>}/>
           <Route exact path='/intro' element={<Intro/>}/>
           <Route exact path='/formulario' element={<Formulario/>}/>
-          
-          
-         
-
-        
-          
+          <Route exact path='/perfil' element={<Profile/>}/>
+          <Route exact path='/perfilU' element={<ProfileU/>}/>
+          <Route exact path='/inicioC' element={<InicioC/>}/>
+          <Route exact path='/SolicitudU' element={<SolicitudU/>}/>
         </Routes>
       
     </Router>

@@ -2,6 +2,7 @@ import React from "react";
 import Inicioc from "../componentes/inicioC";
 
 
+
 function InicioC() {
     return (
         <div className="inicioc">
@@ -10,3 +11,4 @@ function InicioC() {
     ); 
 }
 export default Inicioc;
+

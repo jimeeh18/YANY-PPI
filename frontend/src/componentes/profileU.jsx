@@ -4,7 +4,7 @@ function ProfileU() {
   return (
     <div className="PROFILEu">
       <section className="vh-100" style={{ borderRadius: "10px", backgroundColor: "#d080ff" }}>
-      <h2 style={{fontSize:"20px",}}>Atrás</h2>
+      <h2 style={{fontSize:"20px", }}>Atrás</h2>
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-md-12 col-xl-4">

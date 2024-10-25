@@ -2,10 +2,10 @@ import React from "react";
 import Iniciou from "../componentes/inicioU";
 
 
-function Registro() {
+function InicioU() {
     return (
-        <div className="RegistroC">
-            <RegistroC/>
+        <div className="iniciou">
+            <InicioU/>
         </div>
     );  
 }

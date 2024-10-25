@@ -2,7 +2,6 @@ import React from "react";
 import registro from "../images/registro_imagen.jpeg";
 import { Link } from "react-router-dom";
 
-
 function RegistroC() {
   return (
     <section className="vh-100" style={{ backgroundColor: "#d080ff" }}>
@@ -24,14 +23,16 @@ function RegistroC() {
                           data-mdb-input-init
                           class="form-outline flex-fill mb-0"
                         >
+                          Nombre
                           <input
                             type="text"
                             id="form3Example1c"
                             class="form-control"
                           />
-                          <label className="form-label" for="form3Example1c">
-                            Tu nombre
-                          </label>
+                          <label
+                            className="form-label"
+                            for="form3Example1c"
+                          ></label>
                         </div>
                       </div>
 
@@ -41,14 +42,16 @@ function RegistroC() {
                           data-mdb-input-init
                           class="form-outline flex-fill mb-0"
                         >
+                          Correo
                           <input
                             type="email"
                             id="form3Example3c"
                             class="form-control"
                           />
-                          <label className="form-label" for="form3Example3c">
-                            Tu correo
-                          </label>
+                          <label
+                            className="form-label"
+                            for="form3Example3c"
+                          ></label>
                         </div>
                       </div>
 
@@ -58,14 +61,16 @@ function RegistroC() {
                           data-mdb-input-init
                           class="form-outline flex-fill mb-0"
                         >
+                          Contraseña
                           <input
                             type="password"
                             id="form3Example4c"
                             class="form-control"
                           />
-                          <label classn="form-label" for="form3Example4c">
-                            Contraseña
-                          </label>
+                          <label
+                            classn="form-label"
+                            for="form3Example4c"
+                          ></label>
                         </div>
                       </div>
 
@@ -75,16 +80,47 @@ function RegistroC() {
                           data-mdb-input-init
                           class="form-outline flex-fill mb-0"
                         >
+                          Repite tu contraseña
                           <input
                             type="password"
                             id="form3Example4cd"
                             class="form-control"
                           />
-                          <label class="form-label" for="form3Example4cd">
-                            Repite tu contraseña
-                          </label>
+                          <label
+                            class="form-label"
+                            for="form3Example4cd"
+                          ></label>
                         </div>
                       </div>
+
+                      <p>
+                        <button
+                          class="btn btn-primary"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseExample"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                          style={{
+                            backgroundColor: "#d080ff",
+                            border: "2px solid #d080ff",
+                          }}
+                          width="50"
+                        >
+                          Foto de documento
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="30"
+                            height="16"
+                            fill="currentColor"
+                            className="bi bi-camera"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
+                            <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                          </svg>
+                        </button>
+                      </p>
 
                       <div class="form-check d-flex justify-content-center mb-5">
                         <input
@@ -93,36 +129,46 @@ function RegistroC() {
                           value=""
                           id="form2Example3c"
                         />
-                        <label class="form-check-label" for="form2Example3">
+                        <label
+                          className="form-check-label"
+                          htmlFor="form2Example3"
+                        >
                           Estoy de acuerdo con todas las declaraciones en{" "}
-                          <a href="#!">Términos y condiciones</a>
+                          <a href="#!" style={{ color: "#d080ff" }}>
+                            Términos y condiciones
+                          </a>
                         </label>
                       </div>
-                      <p className="CONDUCTORA">
-                        Continuar como:
-                      </p>
+                      <p className="CONDUCTORA">Continuar como:</p>
                       <div className="row text-center">
                         <div className="col">
                           {" "}
-                          <button
-                            type="button"
-                            class="mb-2 btn btn-primary btn-sm"
-                            style={{ backgroundColor: "#d080ff" }}
-                          >
-                            Conductora
-                          </button>
+                          <Link to="/inicioc">
+                            <button
+                              type="button"
+                              class="mb-2 btn btn-primary btn-sm"
+                              style={{
+                                backgroundColor: "#d080ff",
+                                border: "2px solid #d080ff",
+                              }}
+                            >
+                              Conductora
+                            </button>
+                          </Link>
                         </div>
                         <div className="col">
                           <Link to="/iniciou">
-                          <button
-                            type="button"
-                            class="btn btn-secondary btn-sm"
-                            style={{ backgroundColor: "#d080ff" }}
-                          >
-                            Usuaria
-                          </button>
+                            <button
+                              type="button"
+                              class="btn btn-secondary btn-sm"
+                              style={{
+                                backgroundColor: "#d080ff",
+                                border: "2px solid #d080ff",
+                              }}
+                            >
+                              Usuaria
+                            </button>
                           </Link>
-                          
                         </div>
                       </div>
                     </form>

@@ -1,12 +1,13 @@
 import React from "react";
 
 
-function Iniciou() {
+function Inicioc() {
   return (
-  
+
+    
     <div className="container">
       <section className="mx-auto my-5" style={{ maxWidth: "23rem;" }}>
-      <h2 style={{fontSize:"10px",}}>Atrás</h2>
+      <h2 style={{fontSize:"20px",}}>Atrás</h2>
         <div className="card map-card">
           <div
             id="map-container-google-1"
@@ -29,29 +30,22 @@ function Iniciou() {
               
         </div>
       </section>
- 
-      
 
       <div className="card" style={{width:"18rem;",backgroundColor: "#d080ff" }}>
         
-  <div className="card-header">
-    Featured
-  </div>
-  <ul className="list-group list-group-flush">
-    <li className="list-group-item">Cras justo odio</li>
-    <li className="list-group-item">Dapibus ac facilisis in</li>
-    <li className="list-group-item">Vestibulum at eros</li>
-  </ul>
-</div>
-    </div>
-  );
-}
+        <div className="card-header">
+          Featured
+        </div>
+        <ul className="list-group list-group-flush">
+          <li className="list-group-item">Cras justo odio</li>
+          <li className="list-group-item">Dapibus ac facilisis in</li>
+          <li className="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+          </div>
+        );
+      }
+      
 
-<select className="form-select" size="3" aria-label="size 3 select example">
-  <option selected>¿Lleva mascota o acompañante?</option>
-  <option value="1">Si</option>
-  <option value="2">No</option>
-</select>
-
-
-export default Iniciou;
+    
+export default Inicioc;

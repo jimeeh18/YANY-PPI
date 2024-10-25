@@ -2,7 +2,6 @@ import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
-
 function Iniciosesion() {
   return (
     <div className="Iniciosesion">
@@ -18,28 +17,26 @@ function Iniciosesion() {
                 style={{ borderRadius: "1rem" }}
               >
                 <div class="card-body p-5 text-center">
-                  <h3 class="mb-5">Inicia sesión</h3>
+                  <h3 class="mb-5">Iniciar sesión</h3>
 
                   <div data-mdb-input-init class="form-outline mb-4">
+                    Correo electronico
                     <input
                       type="email"
                       id="typeEmailX-2"
                       class="form-control form-control-lg"
                     />
-                    <label class="form-label" for="typeEmailX-2">
-                      Correo
-                    </label>
+                    <label class="form-label" for="typeEmailX-2"></label>
                   </div>
 
                   <div data-mdb-input-init class="form-outline mb-4">
+                    Contraseña
                     <input
                       type="password"
                       id="typePasswordX-2"
                       class="form-control form-control-lg"
                     />
-                    <label class="form-label" for="typePasswordX-2">
-                      Contraseña
-                    </label>
+                    <label class="form-label" for="typePasswordX-2"></label>
                   </div>
 
                   <div class="form-check d-flex justify-content-start mb-4">
@@ -59,7 +56,10 @@ function Iniciosesion() {
                     data-mdb-button-init
                     data-mdb-ripple-init
                     class="btn btn-primary btn-lg btn-block"
-                    style={{ backgroundColor: "#d080ff" }}
+                    style={{
+                      backgroundColor: "#d080ff",
+                      border: "2px solid #d080ff",
+                    }}
                     type="submit"
                   >
                     Inicio
@@ -84,7 +84,9 @@ function Iniciosesion() {
                   <div class="text-center">
                     <p>
                       No tienes cuenta?
-                      <Link to="/registro">Registrate</Link>{" "}
+                      <Link to="/registro" style={{ color: "#d080ff" }}>
+                        Registrate
+                      </Link>{" "}
                     </p>
                   </div>
                 </div>

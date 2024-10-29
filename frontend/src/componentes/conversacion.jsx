@@ -1,9 +1,9 @@
 import React from "react";
-import chat from "../images/conductorap.jpg";
+import robot from "../images/iconrobot.jpg"
 import usuariop from "../images/usuariop.jpg";
 import { Link } from "react-router-dom";
 
-function Chatu() {
+function Conversacion() {
   return (
     <section>
       <div className="container h-100">
@@ -14,7 +14,7 @@ function Chatu() {
                 className="card-header d-flex justify-content-between align-items-center p-3"
                 style={{ borderTop: "4px solid #d080ff" }}
               >
-                 <Link to="/trayecto" style={{ color: "#d080ff" }}>
+                 <Link to="/soporte" style={{ color: "#d080ff" }}>
                 <p className="small mb-1">Atrás</p>
                 </Link>
 
@@ -41,13 +41,13 @@ function Chatu() {
                   />
                   <div>
                     <p className="small p-2 ms-3 mb-3 rounded-3 bg-body-tertiary">
-                        Hola, soy Amelia, ya estoy bajando las escaleras.
+                     ¿Hola, tengo una duda sobre como llevar un acompañante hombre en un servicio? 
                     </p>
                   </div>
                 </div>
 
                 <div className="text-end">
-                  <p className="small mb-1">Sara Morales</p>
+                  <p className="small mb-1">YANY</p>
                 </div>
                 <div className="d-flex flex-row justify-content-end mb-4 pt-1">
                   <div>
@@ -55,11 +55,11 @@ function Chatu() {
                       className="small p-2 me-3 mb-3 text-white rounded-3"
                       style={{ backgroundColor: "#d080ff" }}
                     >
-                      ¡Hola, Amelia, soy Sara, tu conductora de Yany!
+                   ¡Hola, Amelia, soy tu asistente de Yany! Para llevar acompañantes, debes marcar en la opción que aparece en el momento de pedir el servicio, y si la conductora acepta, puedes acceder al servicio.
                     </p>
                   </div>
                   <img
-                    src={chat}
+                    src={robot}
                     alt="avatar 1"
                     style={{ width: "45px", height: "45px" }}
                   />
@@ -76,13 +76,13 @@ function Chatu() {
                   />
                   <div>
                     <p className="small p-2 ms-3 mb-3 rounded-3 bg-body-tertiary">
-                      Ya llegué.
+                    Está bien, muchas gracias.
                     </p>
                   </div>
                 </div>
 
                 <div className="text-end">
-                  <p className="small mb-1">Sara Morales</p>
+                  <p className="small mb-1">YANY</p>
                 </div>
                 <div className="d-flex flex-row justify-content-end mb-4 pt-1">
                   <div>
@@ -90,11 +90,11 @@ function Chatu() {
                       className="small p-2 me-3 mb-3 text-white rounded-3"
                       style={{ backgroundColor: "#d080ff" }}
                     >
-                      ¡Yo también, gracias por la espera!
+                      ¡Espero que se haya resuelto tu problema!
                     </p>
                   </div>
                   <img
-                    src={chat}
+                    src={robot}
                     alt="avatar 1"
                     style={{ width: "45px", height: "45px" }}
                   />
@@ -133,4 +133,4 @@ function Chatu() {
   );
 }
 
-export default Chatu;
+export default Conversacion;

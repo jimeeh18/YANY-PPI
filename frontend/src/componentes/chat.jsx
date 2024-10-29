@@ -1,6 +1,7 @@
 import React from "react";
 import chat from "../images/conductorap.jpg";
 import usuariop from "../images/usuariop.jpg";
+import { Link } from "react-router-dom";
 
 function Chat() {
   return (
@@ -13,10 +14,11 @@ function Chat() {
                 className="card-header d-flex justify-content-between align-items-center p-3"
                 style={{ borderTop: "4px solid #d080ff" }}
               >
-                 <p className="small mb-1">Atrás</p>
+              <Link to="/aceptar" style={{ color: "#d080ff" }}>
+                  <p className="small mb-1">Atrás</p>
+                </Link>
                 <h5 className="mb-0">Chat</h5>
                 <div className="d-flex flex-row align-items-center">
-                  
                   <i className="fas fa-minus me-3 text-muted fa-xs"></i>
                   <i className="fas fa-comments me-3 text-muted fa-xs"></i>
                   <i className="fas fa-times text-muted fa-xs"></i>
@@ -29,7 +31,6 @@ function Chat() {
               >
                 <div className="d-flex justify-content-between">
                   <p className="small mb-1">Sara Morales</p>
-                 
                 </div>
                 <div className="d-flex flex-row justify-content-start">
                   <img
@@ -39,13 +40,12 @@ function Chat() {
                   />
                   <div>
                     <p className="small p-2 ms-3 mb-3 rounded-3 bg-body-tertiary">
-                      ¡Hola, Amelia, soy Sara, tu conductora de Yany!
+                        ¡Hola, Amelia, soy Sara, tu conductora de Yany!
                     </p>
                   </div>
                 </div>
 
                 <div className="text-end">
-                 
                   <p className="small mb-1">Amelia Cardenas</p>
                 </div>
                 <div className="d-flex flex-row justify-content-end mb-4 pt-1">
@@ -54,7 +54,8 @@ function Chat() {
                       className="small p-2 me-3 mb-3 text-white rounded-3"
                       style={{ backgroundColor: "#d080ff" }}
                     >
-                      Hola, soy Amelia, ya estoy bajando las escaleras, dame un momento.
+                      Hola, soy Amelia, ya estoy bajando las escaleras, dame un
+                      momento.
                     </p>
                   </div>
                   <img
@@ -66,7 +67,6 @@ function Chat() {
 
                 <div className="d-flex justify-content-between">
                   <p className="small mb-1">Sara Morales</p>
-                  
                 </div>
                 <div className="d-flex flex-row justify-content-start">
                   <img
@@ -76,13 +76,12 @@ function Chat() {
                   />
                   <div>
                     <p className="small p-2 ms-3 mb-3 rounded-3 bg-body-tertiary">
-                Dale, te espero.
+                      Dale, te espero.
                     </p>
                   </div>
                 </div>
 
                 <div className="text-end">
-                 
                   <p className="small mb-1">Amelia Cardenas</p>
                 </div>
                 <div className="d-flex flex-row justify-content-end mb-4 pt-1">
@@ -91,7 +90,7 @@ function Chat() {
                       className="small p-2 me-3 mb-3 text-white rounded-3"
                       style={{ backgroundColor: "#d080ff" }}
                     >
-                ¡Ya llegué, gracias por la espera!
+                      ¡Ya llegué, gracias por la espera!
                     </p>
                   </div>
                   <img
@@ -122,7 +121,7 @@ function Chat() {
                       border: "2px solid #d080ff",
                     }}
                   >
-                  Enviar
+                    Enviar
                   </button>
                 </div>
               </div>

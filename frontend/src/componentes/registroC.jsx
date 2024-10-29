@@ -143,7 +143,7 @@ function RegistroC() {
                       <div className="row text-center">
                         <div className="col">
                           {" "}
-                          <Link to="/inicioc">
+                          <Link to="/formulario">
                             <button
                               type="button"
                               class="mb-2 btn btn-primary btn-sm"

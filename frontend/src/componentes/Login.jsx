@@ -52,18 +52,20 @@ function Iniciosesion() {
                     </label>
                   </div>
 
-                  <button
-                    data-mdb-button-init
-                    data-mdb-ripple-init
-                    class="btn btn-primary btn-lg btn-block"
-                    style={{
-                      backgroundColor: "#d080ff",
-                      border: "2px solid #d080ff",
-                    }}
-                    type="submit"
-                  >
-                    Inicio
-                  </button>
+                  <Link to="/inicioU">
+                    <button
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-primary btn-lg btn-block"
+                      style={{
+                        backgroundColor: "#d080ff",
+                        border: "2px solid #d080ff",
+                      }}
+                      type="submit"
+                    >
+                      Inicio
+                    </button>
+                  </Link>
 
                   <hr class="my-4" />
                   <p>También puedes iniciar sesión con:</p>

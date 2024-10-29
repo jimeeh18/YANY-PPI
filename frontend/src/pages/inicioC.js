@@ -1,11 +1,11 @@
 import React from "react";
-import Inicioc from "../componentes/inicioC";
+import InicioC from "../componentes/inicioC";
+import Menu from "../componentes/menu";
 
-
-
-function InicioC() {
+function Inicioc() {
     return (
         <div className="inicioc">
+              <Menu/>
             <InicioC/>
         </div>
     ); 

@@ -2,7 +2,7 @@ import React from "react";
 import mujeres from "../images/mujeres-personaje-dibujos-animados-lindo_81698-1224.avif";
 import star from "../images/star-scale.png";
 
-function ProfileC() { 
+function ProfileC() {
   return (
     <div className="ProfileC">
       <section style={{ backgroundColor: "#d080ff" }}>
@@ -108,8 +108,7 @@ function ProfileC() {
                         </span>
                       </p>
 
-                    <img src={star} alt="" width="300px" height="80px"/>
-                    
+                      <img src={star} alt="" width="300px" height="80px" />
                     </div>
                   </div>
                 </div>

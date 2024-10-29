@@ -11,7 +11,7 @@ function Ayuda() {
           <div className="col-lg-12 col-xl-11">
             <div className="card text-black" style={{ borderRadius: "25px" }}>
               <div className="card-body p-md-5">
-                <Link to="/configuracion" style={{ color: "#d080ff" }}>
+                <Link to="/inicioc" style={{ color: "#d080ff" }}>
                   <p className="small mb-1">Atrás</p>
                 </Link>
                 <div className="row justify-content-center">

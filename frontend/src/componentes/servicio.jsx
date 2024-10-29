@@ -45,7 +45,7 @@ function Servicio() {
                   />
                   <p className="small mb-1">12 Octubre // Robledo pajarito</p>
                   <div>
-                  <Link to="/rutac">
+                  <Link to="/aceptar">
                     <button
                       data-mdb-button-init
                       data-mdb-ripple-init
@@ -79,7 +79,7 @@ function Servicio() {
                     Lusitania paz de Colombia // Robledo pajarito
                   </p>
                   <div>
-                  <Link to="/rutac">
+                  <Link to="/aceptar">
                     <button
                       data-mdb-button-init
                       data-mdb-ripple-init
@@ -111,7 +111,7 @@ function Servicio() {
                   />
                   <p className="small mb-1">Villa hermosa// Robledo pajarito</p>
                   <div>
-                  <Link to="/rutac">
+                  <Link to="/aceptar">
                     <button
                       data-mdb-button-init
                       data-mdb-ripple-init

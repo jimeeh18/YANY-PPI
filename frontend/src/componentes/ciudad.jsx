@@ -1,10 +1,15 @@
-import React, { useRef, useEffect } from 'react';
-
+import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Ciudady() {
   return (
     <div>
-      <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Ciudad</p>
+      <p
+        className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 "
+        style={{ color: "#d080ff" }}
+      >
+        Ciudad
+      </p>
       <select className="form-control form-control-lg">
         <option>Selecciona una ciudad</option>
         <option>Medellin</option>
@@ -14,29 +19,51 @@ function Ciudady() {
         <option>Bogotá</option>
       </select>
 
-      <div className="form-group  mt-3">
-        <label for="exampleFormControlInput1 text-center ">Dirección</label>
-        <input
-          type="email"
-          className="form-control"
-          id="exampleFormControlInput1"
-          placeholder="ejemplo: Calle 10 #20-30, Bogotá D.C."
-        />
+      <div className="border border-purple p-3">
+        <div className="text-center" style={{ color: "#d080ff" }}>
+          <h4>Lugares más frecuentes</h4>
+        </div>
+
+        <table className="table text-center">
+          <thead className="text-center"></thead>
+          <tbody>
+            <tr>
+              <th scope="row" style={{ color: "#d080ff" }}>
+                1
+              </th>
+              <td>Lusitania paz de Colombia</td>
+            </tr>
+            <tr>
+              <th scope="row" style={{ color: "#d080ff" }}>
+                2
+              </th>
+              <td>Estación aurora</td>
+            </tr>
+            <tr>
+              <th scope="row" style={{ color: "#d080ff" }}>
+                3
+              </th>
+              <td>Luna del valle apartamentos</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-           <div className="d-flex mt-3 justify-content-center">
-        <button
-          data-mdb-button-init
-          data-mdb-ripple-init
-          className="btn btn-primary btn-lg btn-block"
-          style={{
-            backgroundColor: "#d080ff",
-            border: "2px solid #d080ff",
-          }}
-          type="submit"
-        >
-          Inicio
-        </button>
+      <div className="d-flex mt-3 justify-content-center">
+        <Link className="nav-link active" to="/iniciou">
+          <button
+            data-mdb-button-init
+            data-mdb-ripple-init
+            className="btn btn-primary btn-lg btn-block"
+            style={{
+              backgroundColor: "#d080ff",
+              border: "2px solid #d080ff",
+            }}
+            type="submit"
+          >
+            Aceptar
+          </button>
+        </Link>
       </div>
     </div>
   );

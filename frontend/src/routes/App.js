@@ -1,10 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Login from '../pages/Login';
-
-import Inicioc from '../pages/inicioC';
 import Registro from '../pages/registroC'
-import Iniciou from '../componentes/inicioU';
+import Iniciou from '../pages/inicioU';
 import Chat from '../pages/chat';
 import Chatu from '../pages/chatu';
 import Idioma from '../pages/idioma';
@@ -14,8 +12,19 @@ import Formulario from '../pages/formulario';
 import Profile from '../pages/Profile';
 import ProfileU from '../pages/profileU';
 import InicioC from '../pages/inicioC';
-import SolicitudU from '../pages/solucitudes'
-
+import SolicitudU from '../pages/solucitudU'
+import Camarap from '../pages/camara'
+import Trayecto from '../pages/trayecto'
+import Configuracion from '../pages/configuracion'
+import Acerca from '../pages/acerca'
+import Eliminar from '../pages/eliminar'
+import Soporte from '../pages/soporte'
+import Conversacion from '../pages/conversacion'
+import Ayuda from '../pages/ayuda'
+import Servicio from '../pages/servicio'
+import RutaC from '../pages/rutac'
+import RutaU from '../pages/rutau'
+import Aceptar from '../componentes/aceptar';
 
 
 function App() {
@@ -23,7 +32,6 @@ function App() {
     <Router>
         <Routes>
           <Route exact path='/' element={<Login/>}/>
-          <Route exact path='/inicioc' element={<Inicioc/>}/>
           <Route exact path='/registro' element={<Registro/>}/>
           <Route exact path='/iniciou' element={<Iniciou/>}/>
           <Route exact path='/chat' element={<Chat/>}/>
@@ -36,8 +44,19 @@ function App() {
           <Route exact path='/perfilU' element={<ProfileU/>}/>
           <Route exact path='/inicioC' element={<InicioC/>}/>
           <Route exact path='/SolicitudU' element={<SolicitudU/>}/>
+          <Route exact path='/Camara' element={<Camarap/>}/>
+          <Route exact path='/Trayecto' element={<Trayecto/>}/>
+          <Route exact path='/Configuracion' element={<Configuracion/>}/>
+          <Route exact path='/Acerca' element={<Acerca/>}/>
+          <Route exact path='/Eliminar' element={<Eliminar/>}/>
+          <Route exact path='/soporte' element={<Soporte/>}/>
+          <Route exact path='/Conversacion' element={<Conversacion/>}/>
+          <Route exact path='/Ayuda' element={<Ayuda/>}/>
+          <Route exact path='/Servicio' element={<Servicio/>}/>
+          <Route exact path='/RutaC' element={<RutaC/>}/>
+          <Route exact path='/RutaU' element={<RutaU/>}/>
+          <Route exact path='/Aceptar' element={<Aceptar/>}/>
         </Routes>
-      
     </Router>
   );
 }

@@ -1,10 +1,11 @@
 import React from "react";
-import Iniciou from "../componentes/inicioU";
+import InicioU from "../componentes/inicioU";
+import Menu from "../componentes/menu";
 
-
-function InicioU() {
+function Iniciou() {
     return (
         <div className="iniciou">
+            <Menu/>
             <InicioU/>
         </div>
     );  

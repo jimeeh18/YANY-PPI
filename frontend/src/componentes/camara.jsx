@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import foto from "../images/foto.jpeg";
+import huella from "../images/huella.jpeg";
 
 function Camara() {
   return (
@@ -8,39 +10,29 @@ function Camara() {
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-lg-12 col-xl-11">
             <div className="card text-black" style={{ borderRadius: "25px" }}>
-              <div className="card-body p-md-5">
-                <div className="row justify-content-center">
-                  <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                    <nav className="navbar navbar-light bg-light">
-                      <span
-                        className="navbar-text d-flex justify-content-center align-items-center"
-                        style={{
-                          backgroundColor: "#d080ff",
-                          color: "white",
-                          padding: "10px",
-                          borderRadius: "10px",
-                          width: "fit-content",
-                        }}
-                      >
-                        Foto de tu documento
-                      </span>
-                    </nav>
-                    <p>Primero el lado de la foto</p>
-                    <p>Ahora el lado de la huella</p>{" "}
-                    <Link to="/registro">
-                      <button
-                        type="button"
-                        className="btn btn-secondary btn-sm"
-                        style={{
-                          backgroundColor: "#d080ff",
-                          border: "2px solid #d080ff",
-                        }}
-                      >
-                        Listo
-                      </button>
-                    </Link>
-                  </div>
+              <div className="card-body p-md-5 text-center">
+              <h3 style={{ backgroundColor: "#d080ff", color: "white", padding: "5px 10px", borderRadius: "5px" }}>Foto de tu documento</h3>
+                <div className="d-flex justify-content-center">
+                  <img src={foto} className="img-fluid" alt="Sample" style={{ maxWidth: "200px" }} />
                 </div>
+                <p>Primero el lado de la foto</p>
+                <div className="d-flex justify-content-center">
+                  <img src={huella} className="img-fluid" alt="Sample" style={{ maxWidth: "200px" }} />
+                </div>
+                <p>Ahora el lado de la huella</p>
+                <Link to="/registro">
+                  <button
+                    type="button"
+                    className="btn btn-secondary btn-sm"
+                    style={{
+                      backgroundColor: "#d080ff",
+                      border: "2px solid #d080ff",
+                      fontSize: "16px",
+                    }}
+                  >
+                    Listo
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

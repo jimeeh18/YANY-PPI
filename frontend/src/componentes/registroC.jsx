@@ -94,6 +94,7 @@ function RegistroC() {
                       </div>
 
                       <p>
+                      <Link to="/camara">
                         <button
                           class="btn btn-primary"
                           type="button"
@@ -120,6 +121,7 @@ function RegistroC() {
                             <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
                           </svg>
                         </button>
+                        </Link>
                       </p>
 
                       <div class="form-check d-flex justify-content-center mb-5">
